@@ -1,0 +1,30 @@
+/* ! Reset css and root */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root{
+    --logo-color:#323232;
+    --secondary-heading: #000000;
+    
+    
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Istok Web", sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

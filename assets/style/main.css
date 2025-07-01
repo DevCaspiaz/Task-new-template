@@ -1,0 +1,125 @@
+@import url("./base.css");
+
+nav img{
+    width: 20px;
+    height: 20px;
+}
+
+header{
+    background-image: url("/assets/image/header/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 716px;
+}
+header img.map-bg{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 32%;
+}
+
+
+header .navigation{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+}
+.navigation .navigation__logo{
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+}
+.navigation .navigation__logo img{
+    width: 2.71rem;
+    height: 2.55rem;
+}
+.navigation__logo-title{
+    font-weight: 700;
+    font-size: 2.77rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--logo-color);
+}
+
+
+.navigation .navigation__bar ul{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.navigation .navigation__bar ul li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.navigation .navigation__bar ul li a{
+    font-weight: 700;
+    font-size: 1.371rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-heading);
+    display: flex;
+    align-items: center;
+}
+.navigation .navigation__bar ul li a img{
+    transform: rotate(90deg);
+}
+.navigation .navigation__bar ul li img{
+    transform: rotate(90deg);
+}
+
+
+
+
+/* ! Burger Menu */
+.burger-menu{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.burger-menu span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #333333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+    top: 0px;
+    transform-origin: left center;
+}
+.burger-menu span:nth-of-type(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger-menu span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+input{
+    display: none;
+    &:checked + .burger-menu span:nth-of-type(1) {
+    transform: rotate(45deg);
+    left: 5px;
+    }
+    &:checked + .burger-menu span:nth-of-type(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    &:checked + .burger-menu span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 28px;
+        left: 5px;
+    }
+}
