@@ -8,38 +8,78 @@
 </head>
 <body>
     <header>
-        <img src="./assets/image/header/map.png" alt="Map" class="map-bg">
-        
         <nav class="navigation">
             <div class="navigation__logo">
-                <img src="./assets/image/header/logo-icon.png" alt="Logo Comu">
-                <h1 class="navigation__logo-title">COMU</h1>
+                <img src="./assets/image/header/logo-icon.png" alt="LOGO COMU">
+                <h1 class="navigation__logo__title">COMU</h1>
             </div>
             <div class="navigation__bar">
-                <ul class="navigation__bar-list">
-                    <li><a href="#">Home <img src="/assets/image/header/arrow-menu.png" alt="arrow"></a> </li>
-                    <li><a href="#">About Us  <img src="/assets/image/header/arrow-menu.png" alt="arrow"></a></li>
-                    <li><a href="#">Auth Pagea  <img src="/assets/image/header/arrow-menu.png" alt="arrow"></a></li>
-                    <li><a href="#">Features  <img src="/assets/image/header/arrow-menu.png" alt="arrow"></a></li>
-                    <li><a href="#">Pricing  <img src="/assets/image/header/arrow-menu.png" alt="arrow"></a></li>
-                    <button class="navigation__bar-list__btn">Get Started</button>
+                <input type="checkbox" id="burger-menu">
+                <label class="burger-menu" for="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="navigation__bar__list">
+                    <li class="navigation__bar__list-items">
+                        <a href="#">Home &#10576;</a>
+                        <ul>
+                            <li><a href="#">Home1</a></li>
+                            <li><a href="#">Home2</a></li>
+                            <li><a href="#">Home3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__bar__list-items">
+                        <a href="#">About Us &#10576;</a>
+                        <ul>
+                            <li><a href="#">About 1</a></li>
+                            <li><a href="#">About 2</a></li>
+                            <li><a href="#">About 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__bar__list-items">
+                        <a href="#">Auth Pagea &#10576;</a>
+                        <ul>
+                            <li><a href="#">Auth Pagea 1</a></li>
+                            <li><a href="#">Auth Pagea 2</a></li>
+                            <li><a href="#">Auth Pagea 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__bar__list-items">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="navigation__bar__list-items">
+                        <a href="#">Pricing</a>
+                    </li>
                 </ul>
+                <button class="navigation__bar__btn">Get Started</button>
             </div>
-
-
-
-
-
-
-            <input type="checkbox" id="burger-menu">
-            <label class="burger-menu" for="burger-menu">
-                <span class="num1"></span>
-                <span class="num2"></span>
-                <span class="num3"></span>
-            </label>
         </nav>
+        <img src="./assets/image/header/map.png" class="map-bg" alt="map">
+        <section class="entrance">
+            <div class="entrance__text">
+                <h2 class="entrance__text__title">Share text, voice, photos, videos and GIFs files for free</h2>
+                <p class="entrance__text__paragraph">Feugiat primis a ligula undo auctor mauris auctor laoreet and pretium augue an egestas cubilia</p>
+                <div class="entrance__text__links">
+                    <button class="entrance__text__links-btn">Learn More</button>
+                    <div class="entrance__text__links-items">
+                        <a href="#"><img src="./assets/image/header/see-more-icon.png
+                        " alt="See More"></a>
+                        <a href="#" class="see-more">See OLMO in Action</a>
+                    </div>
+                </div>
+                <div class="entrance__text__offer">
+                    <a href="#">14 days free trial</a>
+                    <a href="#">No credit card</a>
+                </div>
+            </div>
+            <div class="entrance__image">
+                <img src="./assets/image/header/header-social.png" alt="">
+            </div>
+        </section>
     </header>
-    <main></main>
+    <main>
+    </main>
     <footer></footer>
     
 </body>
