@@ -1,6 +1,7 @@
 @import url("./base.css");
 
 
+
 header{
     background-image: url("../image/header/background.png");
     background-position: center;
@@ -8,11 +9,11 @@ header{
     background-size: cover;
     position: relative;
     padding-bottom: 2rem;
+    margin-bottom: 8.4rem;
 }
 header img.map-bg{
     position: absolute;
     width: 80%;
-    height: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -23,8 +24,6 @@ header img.map-bg{
     justify-content: center;
     gap: 5rem;
 }
-
-
 
 .navigation__logo{
     display: flex;
@@ -253,8 +252,6 @@ input:checked + .burger-menu span:nth-child(3){
     line-height: 147%;
 }
 
-
-
 .entrance__text__offer{
     display: flex;
     align-items: center;
@@ -272,16 +269,110 @@ input:checked + .burger-menu span:nth-child(3){
 }
 
 
+/* ! Skills section */
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+.skills__cards{
+    max-width: 28rem;
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 4rem 3.6rem;
+    border-radius: 4.4rem;
+    background-color: #F7E6CB;
+    box-shadow: 5px 5px 10px #DD8762;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    transition: all .2s;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:focus{
+        transform: translateY(-.5rem);
+    }
+}
+.skills__cards-icon img{
+    width: 7.6rem;
+}
+.skills__cards-title{
+    font-weight: 700;
+    font-size: 1,8rem;
+    line-height: 147%;
+    color: var(--cards-text-color);
+    font-family: "Roboto", sans-serif;
+}
+.skills__cards-contex{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 147%;
+    color: var(--text-color);
+}
+/* * Skills section done */
+
+
+/* ! sharing files, media and locations */
+
+.sharing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 11.5rem auto;
+    gap: 3rem;
+}
+.sharing__img{
+    width: 100%;
+}
+.sharing__img img{
+    width: 100%;
+    height: auto;
+}
+.sharing__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sharing__text__title{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 126%;
+    color: var(--third-heading);
+}
+.sharing__text__paragraph{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 148%;
+    color: var(--text-color);
+}
+/* * Sharing section done */
 
 
 
+/* ! Services section */
 
-
-
-
-
-
-
+.services{
+    width: 90%;
+    margin: 0 auto;
+    padding: 13.5rem 8rem;
+    background: linear-gradient(to right, #F7E6CB, #F5F2EB);
+    border-radius: 4.8rem;
+    display: flex;
+    
+}
+.services img{
+    width: 25px;
+}
 
 
 
@@ -297,9 +388,9 @@ input:checked + .burger-menu span:nth-child(3){
 
 /* ! MEDIA QUERY RESPONSIVE */
 @media (max-width: 768px){
-        .navigation{
+    .navigation{
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 1rem;
         padding-right: 1rem;
     }
@@ -338,25 +429,73 @@ input:checked + .burger-menu span:nth-child(3){
             box-shadow: rgba(182, 47, 6, 0.4) 5px 5px, rgba(182, 47, 6, 0.3) 10px 10px, rgba(182, 47, 6, 0.2) 15px 15px, rgba(182, 47, 6, 0.1) 20px 20px, rgba(182, 47, 6, 0.05) 25px 25px;
         }
     }
-}
-@media (min-width: 481px) and (max-width: 768px){
+
+
     .entrance{
         padding: 3.5rem;
         flex-direction: column;
         gap: 5rem;
-
         .entrance__text{
             max-width: 100%;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+            .entrance__text__title{
+                font-size: 2rem;
+            }
+            .entrance__text__paragraph{
+                font-size: 1.6rem;
+                width: 100%;
+            }
         }
         .entrance__image{
             width: 100%;
         }
+
+        .entrance__text .entrance__text__links{
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+    }
+
+    main{
+        .skills__cards{
+            max-width: 20rem;
+            gap: 1rem;
+        }
+        .skills__cards-icon img{
+            width: 4rem;
+        }
+        .skills__cards-contex{
+            font-size: 1rem;
+            line-height: 120%;
+        }
+
+
+
+        .sharing{
+            flex-direction: column;
+            align-items: center;
+            margin: 7rem auto;
+        }
+        .sharing__img{
+            width: 70%;
+        }
+        .sharing__text{
+            width: 100%;
+            text-align: center;
+        }
+        .sharing__text__title{
+            font-size: 1.8rem;
+        }
+        .sharing__text__paragraph{
+            font-size: 1.5rem;
+        }
     }
 }
+
 
 @media (max-width: 481px){
 

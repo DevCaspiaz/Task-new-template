@@ -1,6 +1,7 @@
 /* ! Reset css and root */
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root{
     --logo-color:#323232;
     --secondary-heading: #000000;
@@ -10,6 +11,9 @@
     --black: #000000;
     --btn-1-color: #F3FCFF;
     --text-color: #535359;
+    --main-bg-color: #FFFCF5;
+    --cards-bg: #F7E6CB;
+    --cards-text-color: #37474F;
 }
 *,
 *::after,
@@ -27,6 +31,7 @@ html{
 }
 body{
     font-family: "Poppins", sans-serif;
+    background-color: var(--main-bg-color);
 }
 img{
     display: block;
