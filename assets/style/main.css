@@ -344,7 +344,7 @@ input:checked + .burger-menu span:nth-child(3){
         padding: 3.5rem;
         flex-direction: column;
         gap: 5rem;
-        width: 100%;
+
         .entrance__text{
             max-width: 100%;
             text-align: center;
