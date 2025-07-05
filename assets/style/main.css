@@ -10,6 +10,7 @@ header{
     position: relative;
     padding-bottom: 2rem;
     margin-bottom: 8.4rem;
+    min-height: 55rem;
 }
 header img.map-bg{
     position: absolute;
@@ -36,7 +37,7 @@ header img.map-bg{
     }
     .navigation__logo__title{
         font-weight: 700;
-        font-size: 2,77rem;
+        font-size: 2.77rem;
         line-height: 100%;
         color: var(--logo-color);
         font-family: "Istok Web", sans-serif;
@@ -204,6 +205,10 @@ main{
 }
 .entrance__image{
     max-width: 50%;
+    img{
+        width: 100%;
+        height: 50%;
+    }
 }
 .entrance__text .entrance__text__title{
     font-weight: 700;
@@ -216,7 +221,6 @@ main{
     font-weight: 500;
     font-size: 1.7rem;
     line-height: 147%;
-    letter-spacing: 3%;
     color: var(--text-color);
     margin-bottom: 2.6rem;
 }
@@ -287,13 +291,12 @@ main{
 }
 .skills__cards{
     max-width: 28rem;
-    background-color: red;
     flex-grow: 1;
     flex-shrink: 1;
     padding: 4rem 3.6rem;
     border-radius: 4.4rem;
-    background-color: #F7E6CB;
-    box-shadow: 5px 5px 10px #DD8762;
+    background-color: var(--cards-bg);
+    box-shadow: 5px 5px 10px var(--box-shadow);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,21 +308,18 @@ main{
     &:hover{
         transform: scale(1.05);
     }
-    &:focus{
-        transform: translateY(-.5rem);
-    }
 }
 .skills__cards-icon img{
     width: 7.6rem;
 }
 .skills__cards-title{
     font-weight: 700;
-    font-size: 1,8rem;
+    font-size: 1.8rem;
     line-height: 147%;
     color: var(--cards-text-color);
     font-family: "Roboto", sans-serif;
 }
-.skills__cards-contex{
+.skills__cards-context{
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 147%;
@@ -379,7 +379,7 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: 10rem;
-    box-shadow: 5px 5px 15px #DD8762, 3px 3px 10px #DD8762;
+    box-shadow: 5px 5px 15px var(--box-shadow), 3px 3px 10px var(--box-shadow);
 }
 .services__text{
     width: 50%;
@@ -551,7 +551,6 @@ footer{
 .footer__icon{
     display: flex;
     gap: .9rem;
-
     img{
         width: 2.8rem;
     }
@@ -579,6 +578,9 @@ footer{
 
 /* ! MEDIA QUERY RESPONSIVE */
 @media (max-width: 768px){
+    header {
+        min-height: 400px;
+    }
     .navigation{
         flex-direction: row-reverse;
         justify-content: flex-start;
@@ -660,7 +662,7 @@ footer{
         .skills__cards-icon img{
             width: 4rem;
         }
-        .skills__cards-contex{
+        .skills__cards-context{
             font-size: 1rem;
             line-height: 120%;
         }
