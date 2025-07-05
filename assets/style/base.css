@@ -9,11 +9,14 @@
     --bg-orange: #FE9563;
     --bg-orange-blur: #fe94639a;
     --black: #000000;
+    --white: #fff;
     --btn-1-color: #F3FCFF;
     --text-color: #535359;
     --main-bg-color: #FFFCF5;
     --cards-bg: #F7E6CB;
     --cards-text-color: #37474F;
+    --content-text-color:  #393939;
+
 }
 *,
 *::after,
